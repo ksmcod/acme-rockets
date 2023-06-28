@@ -103,7 +103,7 @@
 
             <figure class="my-12">
                 <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
-                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-12 after:right-3 after:text-9xl after:text-white after:opacity-25">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-12 after:right-3  after:text-9xl after:text-white after:opacity-25">
                         Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected. Life-long customer! A++ shopping experience.
                     </p>
                 </blockquote>
@@ -139,10 +139,23 @@
 
          <hr class="mx-auto bg-black dark:bg-white w-1/2">
 
+         <!-- CONTACT US SECTION -->
          <section id="contact" class="p-6 my-12">
             <h2 class="text-4xl font-bold text-center mb-6 text-slate-900 dark:text-white sm:text-5xl">
                 Contact Us
             </h2>
+
+            <form action="" class="max-w-5xl mx-auto text-2xl sm:text-3xl  flex flex-col items-start gap-4">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900  dark:border-none focus:outline-none">
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900  dark:border-none focus:outline-none"></textarea>
+
+                <button class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
+                    Submit
+                </button>
+            </form>
          </section>
     </main>
 
